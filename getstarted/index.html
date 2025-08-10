@@ -1,0 +1,729 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Getting Started - Unofficial Wicked Engine Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Unofficial Wicked Engine Wiki" class="md-header__button md-logo" aria-label="Unofficial Wicked Engine Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Unofficial Wicked Engine Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Unofficial Wicked Engine Wiki" class="md-nav__button md-logo" aria-label="Unofficial Wicked Engine Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Unofficial Wicked Engine Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-and-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-prep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Prep
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Prep">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gameh" class="md-nav__link">
+    <span class="md-ellipsis">
+      game.h
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app_initcpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      app_init.cpp
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="app_init.cpp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialize()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamecpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      game.cpp
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="game.cpp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maincpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      main.cpp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checkpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checkpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sanity-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sanity Check
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loadmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoadModel()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-things" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moving Things
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#congrats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Congrats!
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="clone-and-build">Clone and Build</h2>
+<p>After you have cloned the repo, you will want to create a release build of the engine library and the Editor. The engine is entirely self contained and does not have any external dependancies; its build process is painless. Once complete, navigate to <code>BUILD\x64\Release\Editor_Windows</code> and it will be named <code>Editor_Windows.exe</code>. I like to create a shortcut to this on my desktop.</p>
+<p>The Visual Studio solution will contain a <code>Samples</code> folder and a project <code>Template_Windows</code>. This will be the starting point for your game or app, so if it isn't set already, right click on the template in the solution explorer and set it as your startup project.</p>
+<h2 id="project-prep">Project Prep</h2>
+<p>The Windows template ships with only a single file: <code>main.cpp</code>. This file contains an implementation of a Windows main function with all the necessary boilerplate and message handling loop for a Windows application to function, and to provide a bridge for Wicked Engine to work as an application. The important takeaway here is that effort was made in this file to separate what your game logic does with Wicked from how your operating system facilitates it.</p>
+<div class="grid">
+<div>
+<p>Should you build and run this project now, you'll be greeted with a windowed black screen. It will compile some shaders, show some version information and other statistics, but in a few moments it will ultimately settle down to a steady 60fps stream of endless nothing.</p>
+<p>Lets change that!</p>
+</div>
+<div>
+<p><img alt="Nothing" src="../empty-app.jpg" /></p>
+</div>
+</div>
+<p>Despite how scary most of the code in that file might look, this project is conveniently written such that only a minor change near the beginning is really needed for us to start doing our own thing. At the top you will see the following:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;WickedEngine.h&quot;</span>
+
+<span class="n">wi</span><span class="o">::</span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">;</span>
+</code></pre></div>
+<p>As we've seen, Wicked intentionally does the bare minimum by default in its current state. What we need to do is derive our own <code>wi::Application</code> class and derive another class for something called a renderpath, specifically <code>wi::RenderPath3D</code>. Let's come back to this file a bit later.</p>
+<h3 id="gameh">game.h</h3>
+<p>Create a header file called <code>game.h</code> and give it the following:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;WickedEngine.h&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">GameRenderPath</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">wi</span><span class="o">::</span><span class="n">RenderPath3D</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">Load</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">Update</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">GameApp</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">wi</span><span class="o">::</span><span class="n">Application</span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">GameRenderPath</span><span class="w"> </span><span class="n">renderer</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>As you can tell, we are gearing up for a 3D application where we will need to override the methods <code>Initialize()</code>, <code>Load()</code> and <code>Update()</code>.  If you inspect the engine headers you will find others, but for now we can just focus on these.</p>
+<h3 id="app_initcpp">app_init.cpp</h3>
+<p>In an effort to try keep things simple, minimal and managible for the purposes of the content on this site, I would like to separate our application methods from those belonging to our renderpath. This is because the content in <code>Initialize()</code> will change less frequently than what will be found in <code>Load()</code> and <code>Update()</code></p>
+<p>Let's create a source file named <code>app_init.cpp</code> and give it the following:</p>
+<h4 id="initialize">Initialize()</h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;game.h&quot;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">GameApp::Initialize</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wi</span><span class="o">::</span><span class="n">Application</span><span class="o">::</span><span class="n">Initialize</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">renderer</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">canvas</span><span class="p">);</span>
+<span class="w">    </span><span class="n">renderer</span><span class="p">.</span><span class="n">Load</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">ActivatePath</span><span class="p">(</span><span class="o">&amp;</span><span class="n">renderer</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Without going into details (because I don't pretend to know them!) this method is used to introduce the renderpath to our application's <code>canvas</code>, presumably to give the renderer something to draw upon. These pleasantries continue with the base application class method <code>ActivatePath()</code> being provided with our derived <code>GameRenderPath</code> class object named <code>renderer</code>.</p>
+<h3 id="gamecpp">game.cpp</h3>
+<p>Now let's create the star of the show, <code>game.cpp</code>. This will contain the following two methods:</p>
+<h4 id="load">Load()</h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;game.h&quot;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Load</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Content is loaded here!  </span>
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Load</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>There isn't much in this method just yet, but for right now paste it like this and we will return to it soon.</p>
+<h4 id="update">Update()</h4>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Update</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Do something every frame!    </span>
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Update</span><span class="p">(</span><span class="n">dt</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Similar to above, the bare minimum is here. More to come later.</p>
+<h3 id="maincpp">main.cpp</h3>
+<p>Let's double back to <code>main.cpp</code>. Remember how it created the <code>application</code> object from <code>wi::Application</code>? We now have our own derived class, so now we include our <code>game.h</code> header and switch out the class:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;WickedEngine.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;game.h&quot;</span>
+
+<span class="n">GameApp</span><span class="w"> </span><span class="n">application</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="checkpoint">Checkpoint</h2>
+<h3 id="sanity-check">Sanity Check</h3>
+<p>If all goes well (and you might have already guessed) we should be enjoying another visit from our old friend, the empty black screen. I promised to change that, however this is an important milestone: If you find yourself struggling at this point in the tutorial and have <em>no idea what is going on</em>, it might be best to do some intro courses on C++ using Visual Studio and then come back to tackle this. Otherwise, I can <strong>personally</strong> guarantee much hair pulling and shouting ancient nordic curses at your IDE.</p>
+<h3 id="content">Content</h3>
+<p>Now that we've refactored the standard issue Windows template a little bit, we can get to the fun stuff: adding content!</p>
+<p>Inside your cloned repo, there will be a folder named <code>Content/models</code> which will have a number of goodies in various file formats. As far as 3D models go, you will likely recognize some <code>.obj</code> and <code>.glb</code> files contained therein, but there will be a brand new one: Wicked's own <code>.wiscene</code> file. Functionally, these are archived scenes containing models, materials, animations, sounds and any other content that Wicked Engine can immediately use.</p>
+<p>Now would be a good time to fire up the Wicked Editor you freshly compiled and take a peek inside some of this content.</p>
+<p>The Editor is very nicely <a href="https://github.com/turanszkij/WickedEngine/blob/master/Content/Documentation/WickedEditor-Manual.pdf">documented</a> so I won't spend much time describing how it works. However, I think you will find it is fairly intuitive, and inspecting the files in the models folder is as easy as dragging and dropping them right in.</p>
+<div class="grid">
+<div>
+<p>When you're done poking around, either restart the editor, or clear the current scene by clicking the 'x' on the tab in the upper left. Let's have a look at <code>teapot.wiscene</code> and inspect its contents. On the right hand side in the Entities panel, you will see all of the entities that make up this scene and some icons for their attached components. All of the components and data is stored below.</p>
+<p>I would like to bring your attention to two in particular, one named "Base" and the other named "Top". They are so named because they have a name component, and you will see they have several other associated components enabling you to do interesting things with them.</p>
+</div>
+<div>
+<p><img align="right" alt="editor-teapot.jpg" src="../editor-teapot.jpg" /></p>
+</div>
+</div>
+<h4 id="loadmodel">LoadModel()</h4>
+<p>Let's bring this scene into our in-game world and try a few things out by using <code>LoadModel()</code>. Navigate back to your <code>game.cpp</code> source file and make the following changes:</p>
+<div class="grid">
+<div>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;game.h&quot;</span>
+
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">wi</span><span class="o">::</span><span class="nn">scene</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Load</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Content is loaded here!</span>
+<span class="w">    </span><span class="n">LoadModel</span><span class="p">(</span><span class="s">&quot;../../Content/models/teapot.wiscene&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Load</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Update</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Do something every frame!</span>
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Update</span><span class="p">(</span><span class="n">dt</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div>
+<p>Compile and run and we should now see something like this:</p>
+<p><img align="right" alt="Way too close." src="../teapot-close.jpg" /></p>
+</div>
+</div>
+<p>At first glance is a bit unclear what is going on, but what we are viewing is the bottom of the teapot. The default position of the camera is at the world origin, which just so happens to be where the teapot model is roughly positioned.</p>
+<h4 id="camera">Camera</h4>
+<p>To get a better view, let's move the camera back a little bit and up slightly. Modify the <code>Load()</code> function as shown:</p>
+<div class="grid">
+<div>
+<p><div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Load</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">LoadModel</span><span class="p">(</span><span class="s">&quot;../../Content/models/teapot.wiscene&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Create a transform to reposition the camera</span>
+<span class="w">    </span><span class="n">TransformComponent</span><span class="w"> </span><span class="n">transform</span><span class="p">;</span>
+<span class="w">    </span><span class="n">transform</span><span class="p">.</span><span class="n">Translate</span><span class="p">(</span><span class="n">XMFLOAT3</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">-4.0f</span><span class="p">));</span>
+<span class="w">    </span><span class="n">GetCamera</span><span class="p">().</span><span class="n">TransformCamera</span><span class="p">(</span><span class="n">transform</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Load</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+Compile and run, much better!</p>
+</div>
+<div>
+<p><img alt="full view" src="../teapot-full-view.jpg" /></p>
+</div>
+</div>
+<h4 id="moving-things">Moving Things</h4>
+<p>Recall when we used the Editor to view the teapot scene we identified the two objects for the top and base of the teapot? Lets try moving the top by first finding it by its name, and then working with its <code>TransformComponent</code>. Consider the following changes to the <code>Load()</code> method:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">wi</span><span class="o">::</span><span class="nn">scene</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">wi</span><span class="o">::</span><span class="nn">ecs</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Load</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">LoadModel</span><span class="p">(</span><span class="s">&quot;../../Content/models/teapot.wiscene&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Create a transform to reposition the camera</span>
+<span class="w">    </span><span class="n">TransformComponent</span><span class="w"> </span><span class="n">transform</span><span class="p">;</span>
+<span class="w">    </span><span class="n">transform</span><span class="p">.</span><span class="n">Translate</span><span class="p">(</span><span class="n">XMFLOAT3</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5f</span><span class="p">,</span><span class="w"> </span><span class="mf">-4.0f</span><span class="p">));</span>
+<span class="w">    </span><span class="n">transform</span><span class="p">.</span><span class="n">UpdateTransform</span><span class="p">();</span>
+<span class="w">    </span><span class="n">GetCamera</span><span class="p">().</span><span class="n">TransformCamera</span><span class="p">(</span><span class="n">transform</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Move the lid up!</span>
+<span class="w">    </span><span class="n">Entity</span><span class="w"> </span><span class="n">ent_top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetScene</span><span class="p">().</span><span class="n">Entity_FindByName</span><span class="p">(</span><span class="s">&quot;Top&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">TransformComponent</span><span class="o">*</span><span class="w"> </span><span class="n">trans_top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetScene</span><span class="p">().</span><span class="n">transforms</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">(</span><span class="n">ent_top</span><span class="p">);</span>
+<span class="w">    </span><span class="n">trans_top</span><span class="o">-&gt;</span><span class="n">Translate</span><span class="p">(</span><span class="n">XMFLOAT3</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.6f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">));</span>
+
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Load</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Check your returns!</p>
+<p>Keep in mind that absolutely no error checking is being carried out. If the entity cannot be found by name, you will end up with <code>wi::ecs::INVALID_ENTITY</code> which is zero. If the entity is invalid or does not have a component you are attempting to get, you will receive a null pointer.</p>
+</div>
+<div class="grid">
+<div>
+<p>The additional <code>wi::ecs</code> namespace has been added for the <code>Entity</code> type, which is simply a 64-bit unsigned number.</p>
+<p>On line 14 we get the global scene to find our entity by name with <code>Entity_FindByName()</code>. Next, we fetch the <code>TransformComponent</code> pointer specific to the Entity we were given. Finally, we call the <code>Translate()</code> method on that object to slightly move the the lid up on the Y axis.</p>
+</div>
+<div>
+<p><img alt="lid up" src="../teapot-lid-up.jpg" /></p>
+</div>
+</div>
+<p>Finally, let's add some code to slowly move the lid upward a little bit every frame. Make the following changes to <code>GameApp::Update()</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">GameRenderPath::Update</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Entity</span><span class="w"> </span><span class="n">ent_teapot_top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetScene</span><span class="p">().</span><span class="n">Entity_FindByName</span><span class="p">(</span><span class="s">&quot;Top&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">TransformComponent</span><span class="o">*</span><span class="w"> </span><span class="n">trans_teapot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetScene</span><span class="p">().</span><span class="n">transforms</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">(</span><span class="n">ent_teapot_top</span><span class="p">);</span>
+<span class="w">    </span><span class="n">trans_teapot</span><span class="o">-&gt;</span><span class="n">Translate</span><span class="p">(</span><span class="n">Vector3</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">));</span>
+
+<span class="w">    </span><span class="n">RenderPath3D</span><span class="o">::</span><span class="n">Update</span><span class="p">(</span><span class="n">dt</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="congrats">Congrats!</h2>
+<p>You've taken your first steps into making some content using Wicked Engine! If you have any comments on this tutorial or have some suggestions for future tutorials, please head over to <a href="https://discord.com/channels/602811659224088577/1403732825584177333">#wiki-and-documentation</a> on the <a href="https://discord.gg/CFjRYmE">Wicked Discord server</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.path", "toc.integrate", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
